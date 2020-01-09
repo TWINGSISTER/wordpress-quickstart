@@ -22,7 +22,7 @@ Select _+Add_ in the OpenShift _Developer_ web console, then _YAML_, and cut and
 Deploying WordPress using the Template
 -------------------
 
-To deploy a fresh WordPress instance, from the web console select _*Add to Project_. Under _Browse Catalog_, select _PHP_. You should be presented with options for the templates you loaded. Chose 
+To deploy a fresh WordPress instance, from the web console select _+Add to Project_. Under _Browse Catalog_, select _PHP_. You should be presented with options for the templates you loaded. Choose 
 
 ![Deployment Options](./screenshots/browse-catalog-wordpress.png)
 
