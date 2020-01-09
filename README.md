@@ -1,35 +1,28 @@
-WordPress Quickstart
+WordPress chopped down Quickstart
 ====================
 
-This repository implements a way of quickly deploying WordPress to OpenShift 3.
+This repository implements a way of quickly deploying WordPress to OpenShift 4.
 
-Provided in the repository are OpenShift templates for deploying WordPress in a number of different configurations suitable for production and testing environments.
+Provided in the repository are OpenShift templates for deploying WordPress.
 
 When running, all data related to the WordPress instance is maintained in a persistent volume so it can be updated and changes retained. If the deployment is linked to a repository, you can have updates to plugins, themes and language files copied from a source code repository by re-building the application. This will allow you to keep the code for our own custom plugins and themes under version control.
 
 Fork this Repository First
 --------------------------
 
-Before deploying WordPress using this repository, it is recommended that you fork it, then use your copy. This will ensure that you are using a stable version of the scripts and will not be affected by future changes made to this repository. You can update your fork from this repository later if you need future changes which may be made.
+Before deploying WordPress using this repository, it is recommended that you fork it, then use your copy. 
 
 To fork the repository, use the **Fork** button on the home page for this repository on GitHub. After creating the fork, modify the templates and change the URL used in them to the repository for your fork. Alternatively, when using the templates, ensure you change the URL in the template parameter to be your fork.
 
-Loading the Templates
+Loading the Template
 ---------------------
 
-To load the templates into OpenShift from the command line you can run:
+Select _+Add_ in the OpenShift _Developer_ web console, then _YAML_, and cut and paste the Json code into the form and press _Create_.
 
-```
-oc create -f templates/classic-standalone.json
-oc create -f templates/classic-repository.json
-```
-
-Alternatively, you can select _Add to Project_ in the OpenShift web console, then _Import YAML/JSON_, and upload the template or cut and paste it into the form. Skip processing the template immediately to load it into the service catalog. The following instructions assume you load it into the service catalog before using it.
-
-Deploying WordPress
+Deploying WordPress using the Template
 -------------------
 
-To deploy a fresh WordPress instance, from the web console select _Add to Project_. Under _Browse Catalog_, select _PHP_. You should be presented with options for the templates you loaded.
+To deploy a fresh WordPress instance, from the web console select _*Add to Project_. Under _Browse Catalog_, select _PHP_. You should be presented with options for the templates you loaded. Chose 
 
 ![Deployment Options](./screenshots/browse-catalog-wordpress.png)
 
